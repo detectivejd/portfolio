@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/formulario.css">
+        <link rel="icon" type="image/x-icon" href="img/icons8-inteligencia-artificial-48.png">
+        <title>Mi Primera WEB</title>
+        <script src="https://kit.fontawesome.com/bb6f56a68e.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/formulario.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header id="encabezado">
+                <a href="index.html">
+                    <img src="img/icons8-inteligencia-artificial-48.png" />
+                </a>
+                <nav>
+                    <input type="checkbox" id="check" />
+                    <label for="check" class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#acercaDe">Acerca de mi</a></li> 
+                        <li><a href="#Trabajos">Trabajos</a></li> 
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="formulario.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main id="seccion-principal">
+                <section>
+                    <h2 class="titulo_seccion">Contacto</h2>
+                    <div class="form_contenedor">
+                        <div class="container">
+                            <form id="formularioContacto">
+                                <!-- Fila para nombre y apellido -->
+                                <div class="form-group fila">
+                                    <div class="campo">
+                                        <label for="nombre">Nombre:</label>
+                                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                                    </div>
+                                    <div class="campo">
+                                        <label for="apellido">Apellido:</label>
+                                        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+                                    </div>
+                                </div>
+            
+                                <!-- Fila para teléfono y celular -->
+                                <div class="form-group fila">
+                                    <div class="campo">
+                                        <label for="telefono">Teléfono:</label>
+                                        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 23123456, +598 2312 3456, 2312-3456" required>
+                                    </div>
+                                    <div class="campo">
+                                        <label for="celular">Celular:</label>
+                                        <input type="tel" id="celular" name="celular" placeholder="Ej: 091234567, +598 091 234 567, 091-234-567" required>
+                                    </div>
+                                </div>
+            
+                                <!-- Fila para país y mensaje -->
+                                <div class="form-group fila">
+                                    <div class="campo">
+                                        <label for="pais">País:</label>
+                                        <select id="pais" name="pais" required>
+                                            <option value="argentina">Argentina</option>
+                                            <option value="colombia">Colombia</option>
+                                            <option value="mexico">México</option>
+                                            <option value="peru">Perú</option>
+                                            <option value="chile">Chile</option>
+                                            <option value="uruguay" selected="selected">Uruguay</option>
+                                        </select>
+                                    </div>
+                                    <div class="campo">
+                                        <label for="correo">Correo Electrónico:</label>
+                                        <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+                                    </div>
+                                </div>
+            
+                                <div class="form-group fila">
+                                    <div class="campo">
+                                        <label for="fecha">Fecha:</label>
+                                        <input type="date" id="fecha" name="fecha" required>
+                                    </div>
+                                    <div class="campo">
+                                        <label for="mensaje">Mensaje:</label>
+                                        <textarea id="mensaje" name="mensaje" rows="10" required></textarea>
+                                    </div>                                    
+                                </div>
+                                
+                                <div class="boton-contenedor">
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer id="Contactos">
+                <div id="footer">
+                    <a href="#"><i class="fa-solid fa-heart fixed"></i></a>
+                    <h3>Seguínos en:</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram" title="Instagram" style="margin-right: 5px;"></i>Instagram</a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook" title="Facebook" style="margin-right: 5px;"></i>Facebook</a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-x-twitter" title="X-Twitter" style="margin-right: 5px;"></i>Twitter</a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin" title="LinkedIn" style="margin-right: 5px;"></i>LinkedIn</a></li>
+                        </ul>
+                    </nav>                
+                </div>            
+            </footer>
+        </div>
+    </body>
+</html>

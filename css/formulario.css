@@ -1,0 +1,130 @@
+/* Estilo general */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el título de la sección */
+.titulo_seccion {
+    position: relative;
+    font-size: 3rem;
+    color: #003750;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo general para los grupos de formulario */
+.form-group {
+    margin: 0 10px 15px 10px;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap; /* Para permitir que los elementos se apilen en pantallas pequeñas */
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.fila .campo {
+    flex: 1 1 calc(50% - 15px); /* Ajusta los campos a la mitad del ancho disponible */
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Estilo para los campos de entrada (text, email, tel) y el textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Ajuste para el textarea dentro de la fila */
+textarea {
+    width: 100%;
+    resize: vertical;
+    margin-right: 10px;
+}
+
+/* Estilo para el botón */
+.boton-contenedor {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para el botón */
+button {
+    background-color: steelblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo para el botón al pasar el mouse sobre él */
+button:hover {
+    background-color: darkred;
+}
+
+/* Estilizar el campo de fecha */
+input[type="date"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f0f8ff;
+    box-sizing: border-box;
+}
+
+/* Cambiar el color del borde al hacer foco */
+input[type="date"]:focus {
+    border-color: steelblue;
+    outline: none;
+}
+
+/* Estilo opcional al campo de fecha inválido */
+input[type="date"]:invalid {
+    border-color: red;
+}
+
+/* Media Query para dispositivos pequeños (smartphones en orientación vertical) */
+@media (max-width: 768px) {
+    .titulo_seccion {
+        font-size: 2rem; /* Reducir tamaño de texto en pantallas pequeñas */
+    }
+
+    /* Asegurar que los campos del formulario se apilen en lugar de estar en fila */
+    .fila .campo {
+        flex: 1 1 100%; /* Los campos ocuparán el 100% de la fila */
+    }
+
+    .form-group {
+        margin: 0 5px 15px 5px;
+    }
+
+    /* Ajustar el tamaño de los botones */
+    button {
+        width: 100%; /* El botón ocupa todo el ancho disponible */
+        padding: 12px;
+    }
+}
